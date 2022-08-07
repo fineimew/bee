@@ -1,0 +1,400 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>OPQ Mauka · Open Power Quality</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="OPQ Mauka is a distributed plugin-based middleware for OPQ that provides higher level analytic capabilities. OPQ Mauka provides analytics for classification of PQ events, aggregation of triggering data for long term trend analysis, community detection, statistics, and metadata management. It is intended to provide the following capabilities:"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="OPQ Mauka · Open Power Quality"/><meta property="og:type" content="website"/><meta property="og:url" content="https://openpowerquality.org/index.html"/><meta property="og:description" content="OPQ Mauka is a distributed plugin-based middleware for OPQ that provides higher level analytic capabilities. OPQ Mauka provides analytics for classification of PQ events, aggregation of triggering data for long term trend analysis, community detection, statistics, and metadata management. It is intended to provide the following capabilities:"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/opq.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://openpowerquality.org/blog/atom.xml" title="Open Power Quality Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://openpowerquality.org/blog/feed.xml" title="Open Power Quality Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script><script type="text/javascript" src="/js/mathjax-config.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/opqlogo_white.png" alt="Open Power Quality"/><h2 class="headerTitleWithLogo">Open Power Quality</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/intro-motivation.html" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/other-opportunities.html" target="_self">Opportunities</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Developer Guide: OPQ Cloud</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/intro-motivation.html">Motivation for OPQ</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-power-quality.html">A beginner&#x27;s guide to power quality</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-system-architecture.html">OPQ System Architecture</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-information-architecture.html">OPQ Information Architecture</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-related-work.html">Related Work</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-bibliography.html">Bibliography</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">User Guide</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/userguide-hardware.html">OPQ Box</a></li><li class="navListItem"><a class="navItem" href="/docs/userguide-software.html">OPQ Cloud</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Developer Guide: OPQ Box</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/box-overview.html">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/box-hardware-design.html">Hardware Design</a></li><li class="navListItem"><a class="navItem" href="/docs/box-software-design.html">Software Design</a></li><li class="navListItem"><a class="navItem" href="/docs/box-manufacturing.html">Manufacturing</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Developer Guide: OPQ Cloud</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/cloud-overview.html">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-installation.html">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-datamodel.html">Data Model</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-view.html">View</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/cloud-mauka.html">Mauka</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-makai.html">Makai</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-health.html">Health</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-healthv2.html">Health v2</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-box-update-server.html">Box Update Server</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-mongodb.html">MongoDB</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-protocol.html">Protocol</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-port-map.html">Port Map</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-docker.html">Docker</a></li><li class="navListItem"><a class="navItem" href="/docs/cloud-migration.html">Cloud Migration</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Developer Guide: Misc</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/developerguide-docusaurus.html">Documentation</a></li><li class="navListItem"><a class="navItem" href="/docs/developerguide-virtual-machine.html">VM &amp; Sim</a></li><li class="navListItem"><a class="navItem" href="/docs/developerguide-bibliography.html">Bibliography</a></li><li class="navListItem"><a class="navItem" href="/docs/developerguide-emilia-ssh.html">Emilia SSH</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Other</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/other-roadmap.html">Roadmap</a></li><li class="navListItem"><a class="navItem" href="/docs/other-opportunities.html">R&amp;D Opportunities</a></li><li class="navListItem"><a class="navItem" href="/docs/other-agile-power-monitoring.html">Agile Power Monitoring for UH</a></li><li class="navListItem"><a class="navItem" href="/docs/other-g1-pilot-study.html">G1 Pilot Study (2014)</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">OPQ Mauka</h1></header><article><div><span><p>OPQ Mauka is a distributed plugin-based middleware for OPQ that provides higher level analytic capabilities. OPQ Mauka provides analytics for classification of PQ events, aggregation of triggering data for long term trend analysis, community detection, statistics, and metadata management. It is intended to provide the following capabilities:</p>
+<ul>
+<li>Recording long term trends from triggering measurements</li>
+<li>Classification of voltage dip/swells</li>
+<li>Classification of frequency dip/swells</li>
+<li>Requests of raw data for higher level analytics, including:
+<ul>
+<li>Community detection</li>
+<li>Grid topology</li>
+<li>Global/local event detection/discrimination</li>
+<li>Integration with other data sources (<em>i.e.</em> PV production)</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="design"></a><a href="#design" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Design</h2>
+<h3><a class="anchor" aria-hidden="true" id="overview"></a><a href="#overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h3>
+<p>OPQMauka is written in Python 3.7 and depends on 2 ZMQ brokers as well as a Mongo database. The architecture of OPQMauka is designed in such a way that all analytics are provided by plugins that communicate using publish/subscribe semantics using ZMQ. This allows for a distributed architecture and horizontal scalability.</p>
+<h3><a class="anchor" aria-hidden="true" id="mauka-services"></a><a href="#mauka-services" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mauka Services</h3>
+<p>Mauka utilizes several services that are started as separate processes in order to function. Diagram of these services and utilized ports are provided below. Followed by their descriptions.</p>
+<p>All items within the blue box are components that together make up OPQMauka. This first diagram shows how Mauka interacts with other parts of OPQ.
+<img src="/docs/assets/mauka/mauka_integration_diagram.png"></p>
+<p>This second diagram displays the port mappings between Mauka components and other OPQ services.
+<img src="/docs/assets/mauka/mauka_port_diagram.png"></p>
+<table>
+<thead>
+<tr><th>Service</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Makai Event Bridge</td><td>Provides event id numbers to the <code>MakaiEvent</code> topic. Data is bridged over a ZMQ proxy.</td></tr>
+<tr><td>Mauka Pub/Sub Broker</td><td>Provides a Publish/Subscribe ZMQ broker to all Mauka plugins. This is how plugins within Mauka communicate with each other.</td></tr>
+<tr><td>Mauka Plugin Manager</td><td>This is a process that manages plugin processes. It also allows developers to interact with plugins at runtime through the Mauka CLI.</td></tr>
+<tr><td>Mauka CLI</td><td>This provides a networked command line interface for interfacing with the Mauka Plugin Manager to manage plugins at runtime.</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="mauka-plugins"></a><a href="#mauka-plugins" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mauka Plugins</h3>
+<p>The OPQMauka processing pipeline is implemented as a directed acyclic graph (DAG). Communication between vertexes in the graph is provided via ZeroMQ. Each node in the graph is implemented by an OPQMauka Plugin. Each plugin runs as a seperate process allowing scalability to distributed systems. Additional analysis plugins can be added to OPQMauka at runtime, without service interruption.</p>
+<p>Each OPQMauka Plugin provides a set of topics that it subscribes to and a set of topics that it produces. These topics form the edges between vertexes in our graph. Because each plugin is independent and only relies on retrieving and transmitting data over ZeroMQ, plugins can be implemented in any programming language and executed on any machine in a network. This design allows us to easily scale plugins across multiple machines in order to increase throughput.3.</p>
+<p>Below is a figure of the current plugin architecture.</p>
+<p><img src="/docs/assets/mauka/mauka_functional_diagram.png"></p>
+<p>This figure shows Mauka's  class inheritance structure.</p>
+<p><img src="/docs/assets/mauka/mauka_class_inheritance_diagram.png"></p>
+<h3><a class="anchor" aria-hidden="true" id="base-plugin-maukaplugin"></a><a href="#base-plugin-maukaplugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Base Plugin (MaukaPlugin)</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/base_plugin.py">base plugin</a> is a base class which implements common functionally across all plugins. This plugin in subclassed by all other OPQMauka plugins. The functionality this plugin provides includes:</p>
+<ul>
+<li>Access to the underlying Mongo database</li>
+<li>Automatic publish subscribe semantics with <code>on_message</code> and <code>publish</code> APIs (via ZMQ)</li>
+<li>Configuration/JSON parsing and loading</li>
+<li>Python multiprocessing primitives</li>
+<li>Status/heartbeat notifications</li>
+</ul>
+<p>The base plugin produces heartbeats at a configurable amount of time which can be modified using the <code>plugins.base.heartbeatIntervalS</code> configuration option.</p>
+<h3><a class="anchor" aria-hidden="true" id="acquisition-trigger-plugin"></a><a href="#acquisition-trigger-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Acquisition Trigger Plugin</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/acquisition_trigger_plugin.py">acquistion trigger plugin</a> subscribes to all events and forms event request messages to send to OPQMakai to enable the retrieval of raw power data for higher level analytics.</p>
+<p>This plugin employs a deadzone between event messages to ensure that multiple requests for the same data are not sent in large bursts, overwhelming OPQBoxes or OPQMakai. The deadzone by default is set to 60 seconds, but can be configured by setting the <code>plugins.AcquisitionTriggerPlugin.sDeadZoneAfterTrigger</code> key in the configuration. If this plugin encounters an event while in a deadzone, a request is still generated and sent to OPQMakai, however a flag is set indicating to Makai that raw data should not be requested.</p>
+<p>The amount of data requested from Makai is padded on either end with a configurable amount of padding time tunable by the <code>plugins.AcquisitionTriggerPlugin.msBefore</code> and <code>plugins.AcquisitionTriggerPlugin.msAfter</code> configuration options.</p>
+<h3><a class="anchor" aria-hidden="true" id="frequency-variation-plugin"></a><a href="#frequency-variation-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Frequency Variation Plugin</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/frequency_variation_plugin.py">frequency variation plugin</a> subscribes to WindowedFrequency messages and classifies frequency incidents as frequency swells, frequency interruptions, and frequency sags. These classifications can be parameterized by tuning the threshold and duration values that these incidents are fired on.</p>
+<p>When thresholds are tripped, frequency events are generated and published to the system. These are most importantly used to generate event triggering requests to OPQMauka to request raw data from affected devices.</p>
+<p>The frequency reference is defined by the <code>plugins.FrequencyVariationPlugin.frequency.ref</code> config key.</p>
+<p>Frequency thresholds are defined by the <code>plugins.FrequencyVariationPlugin.frequency.variation.threshold.low</code> and <code>plugins.FrequencyVariationPlugin.frequency.variation.threshold.high</code> keys.</p>
+<p>Frequency interruptions are defined using the <code>plugins.FrequencyVariationPlugin.frequency.interruption</code> config key.</p>
+<p>The number of lull windows can be set with <code>plugins.FrequencyVariationPlugin.max.lull.windows</code>.</p>
+<h3><a class="anchor" aria-hidden="true" id="ieee-1159-voltage-plugin"></a><a href="#ieee-1159-voltage-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IEEE 1159 Voltage Plugin</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/ieee1159_voltage_plugin.py">IEEE1159 voltage event plugin</a> subscribes to all events that request data, analyzes the waveforms, and stores classified incidents back in the database. A received waveform is analyzed for continuous segments with non-nominal amplitudes. There are two important features of these segments that are considered for classification: duration and relative amplitude. The duration is the length of the segment in periods and/or seconds. The relative amplitude, which is defined per window (e.g period) of a waveform, is given as the actual divided by the nominal amplitude (where nominal is as specified by country/region).</p>
+<p>The IEE1159 documentation specifies incidents by ranges of values for duration and relative amplitudes of a segment. The categories include undervoltage, overvoltage, and interruption (describing events lasting longer than a minute) and instantaneous, momentary, and temporary dips and swells (for shorter timescales). For example, a stretch with relative amplitudes between 0.1 and 0.9 that lasts 0.5 to 30 periods is classified as an instantaneous dip.</p>
+<h3><a class="anchor" aria-hidden="true" id="itic-plugin"></a><a href="#itic-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ITIC Plugin</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/itic_plugin.py">ITIC plugin</a> subscribes to all events that request data, waits until the data is realized, performs ITIC calculations over the data, and then stores the results back to the database.</p>
+<p>This plugin subscribes to events that request data and also ITIC specific messages so that this plugin can be triggered to run over historic data as well. The amount of time from when this plugin receives a message until it assumes the data is in the database can be configured in the configuration file.</p>
+<p>The ITIC calculations are computed in a separate thread and the results are stored back to the database.</p>
+<p>ITIC regions are determined by plotting the curve and performing a point in polygon algorithm to determine which curve the point falls within.</p>
+<p>The ITIC plugin uses segmentation to determine segments of stable Vrms values. The Vrms threshold for segmentation is configurable by setting the <code>plugins.IticPlugin.segment.threshold.rms</code> config option.</p>
+<h3><a class="anchor" aria-hidden="true" id="makai-event-plugin"></a><a href="#makai-event-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Makai Event Plugin</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/makai_event_plugin.py">makai event plugin</a> subscribes to MakaiEvent messages which contains an integer representing the id of an event that Makai generated and stored to the database. This plugin receives event notifications from Makai asynchronously. When an event notification is received, this plugin goes to the database, reads the raw waveform, and then publishes the raw waveform, calibrated waveform, windowed Vrms, and windowed frequency to any plugins that performs analysis on those data types.</p>
+<p>The Makai Event plugin provides the following configuration options and default values:</p>
+<pre><code class="hljs css language-json">"plugins.MakaiEventPlugin.getDataAfterS": 10.0,
+"plugins.MakaiEventPlugin.filterOrder":4,
+"plugins.MakaiEventPlugin.cutoffFrequency": 500.0,
+"plugins.MakaiEventPlugin.frequencyWindowCycles": 1,
+"plugins.MakaiEventPlugin.frequencyDownSampleRate": 2
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="outage-plugin"></a><a href="#outage-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Outage Plugin</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/outage_plugin.py">outage plugin</a> subscribes to heatbeats and on each heartbeat checks queries the health collection of the database to determine if a box has been down for a specified period of time.</p>
+<p>If a box appears as down and is not marked as unplugged, then this plugin produces and outage incident which is stored to the database.</p>
+<h3><a class="anchor" aria-hidden="true" id="print-plugin"></a><a href="#print-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Print Plugin</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/print_plugin.py">print plugin</a> subscribes to all topics and prints every message. This plugin is generally disabled and mainly only useful for debugging purposes.</p>
+<h3><a class="anchor" aria-hidden="true" id="semi-f47-plugin"></a><a href="#semi-f47-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Semi F47 Plugin</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/semi_f47_plugin.py">semi f47 plugin</a> classifies voltage incidents according to the Semi F47 standard. This standard was designed to model how voltage dips can cause damage to semiconductor equipment.</p>
+<h3><a class="anchor" aria-hidden="true" id="status-plugin"></a><a href="#status-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Status Plugin</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/status_plugin.py">status plugin</a> subscribes to heartbeat messages and logs heartbeats from all other plugins (including itself). Also provides an HTTP endpoint so the status of Mauka, Mauka services, and Mauka plugins can be ascertained by other services.</p>
+<p>The <code>plugins.StatusPlugin.port</code> config option can be changed to specify the port that the status plugin should run on.</p>
+<h3><a class="anchor" aria-hidden="true" id="total-harmonic-distortion-plugin"></a><a href="#total-harmonic-distortion-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Total Harmonic Distortion Plugin</h3>
+<p>The <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/thd_plugin.py">total harmonic distortion (THD) plugin</a> subscribes to all events that request data, waits until the data is realized, performs THD calculations over the data, and then stores the results back to the database.</p>
+<p>This plugin subscribes to events that request data and also THD specific messages so that this plugin can be triggered to run over historic data as well. The amount of time from when this plugin receives a message until it assumes the data is in the database can be configured in the configuration file.</p>
+<p>The THD calculations are computed in a separate thread and the results are stored back to the database.</p>
+<h3><a class="anchor" aria-hidden="true" id="transient-plugin"></a><a href="#transient-plugin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Transient Plugin</h3>
+<p>The [transient plugin] is capable of discriminating between several different transient types. A decision tree is used to prune possibilities by extracting features from the PQ data. The transient classes this plugin is able to classify include impulsive, arcing, oscillatory, and periodic notching.</p>
+<p>The following configuration options are used for the transient plugin which shows the options and the default values:</p>
+<pre><code class="hljs css language-json">"plugins.TransientPlugin.noise.floor" : 6.0,
+"plugins.TransientPlugin.oscillatory.min.cycles" : 3,
+"plugins.TransientPlugin.oscillatory.low.freq.max.hz" : 5000.0,
+"plugins.TransientPlugin.oscillatory.med.freq.max.hz" : 500000.0,
+"plugins.TransientPlugin.oscillatory.high.freq.max.hz" : 5000000.0,
+"plugins.TransientPlugin.arcing.zero.crossing.threshold" : 10,
+"plugins.TransientPlugin.max.lull.ms" : 4.0,
+"plugins.TransientPlugin.max.periodic.notching.std.dev" : 2.0,
+"plugins.TransientPlugin.auto.corr.thresh.periodicity" : 0.4
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="development"></a><a href="#development" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Development</h2>
+<h3><a class="anchor" aria-hidden="true" id="obtaining-the-sources"></a><a href="#obtaining-the-sources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Obtaining the sources</h3>
+<ol>
+<li>Clone the master branch of the OPQ project at: <a href="https://github.com/openpowerquality/opq">https://github.com/openpowerquality/opq</a></li>
+<li>OPQ Mauka sources can be located at opq/mauka</li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="directory-structure-and-layout"></a><a href="#directory-structure-and-layout" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Directory structure and layout</h3>
+<p>The top level of the <code>opq/mauka</code> directory contains the following files:</p>
+<table>
+<thead>
+<tr><th>Files</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>analysis.py</td><td>High level helper functions for time conversions and signal segmentation</td></tr>
+<tr><td>config.json</td><td>Default key-value based configuration values for Mauka</td></tr>
+<tr><td>config.py</td><td>Provides functions for loading configurations and providing default values</td></tr>
+<tr><td>constants.py</td><td>Python module providing constant values.</td></tr>
+<tr><td>incident_viewer.py</td><td>Script for displaying Mauka classified incidents.</td></tr>
+<tr><td>log.py</td><td>Contains a top level mauka level logging interface.</td></tr>
+<tr><td>mongo.py</td><td>Python module providing high level access to the OPQ Mongo database.</td></tr>
+<tr><td>opq_mauka.py</td><td>Entry point into OPQ Mauka. Provides high level management of plugins. Starts and manages Mauka services.</td></tr>
+<tr><td>requirements.txt</td><td>List of Python dependencies required by Mauka.</td></tr>
+<tr><td>rerun_incidents.py</td><td>This script provides functionality for rerunning all past incidents through new or updated analysis plugins.</td></tr>
+<tr><td>.coafile</td><td>Contains rules for Mauka style checking</td></tr>
+</tbody>
+</table>
+<p>The top level of the <code>opq/mauka</code> directory contains the following directories:</p>
+<table>
+<thead>
+<tr><th>Directory</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>api_docs</td><td>Contains tool generated API documentation.</td></tr>
+<tr><td>deploy</td><td>Contains scripts for building and deploying Mauka to emilia or OPQ Sim. (deprecated, use docker deploy)</td></tr>
+<tr><td>diagrams</td><td>Contains mauka system diagrams generated using the graph description language and graphviz</td></tr>
+<tr><td>docker</td><td>Contains scripts for building, publishing, and running docker images for Mauka.</td></tr>
+<tr><td>plugins</td><td>Contains all Mauka plugin modules</td></tr>
+<tr><td>profilers</td><td>Contains profilers designed to profile mauka plugins.</td></tr>
+<tr><td>protobuf</td><td>Contains the Python protobuf wrapper for OPQ as well as some utilities. This is mainly needed for working with Makai.</td></tr>
+<tr><td>services</td><td>Contains modules that build the Mauka services layer.</td></tr>
+<tr><td>tests</td><td>Mauka tests directory.</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="running-in-development"></a><a href="#running-in-development" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Running in development</h3>
+<p>To test OPQ Mauka in a development environment, you can use OPQ Sim.</p>
+<ol>
+<li>Install and become familiar with <a href="/docs/developerguide-virtual-machine.html">OPQ Sim</a>.</li>
+<li>Use the <a href="deploy-mauka.md">included deployment scripts</a> to deploy an OPQ Mauka bundle to to OPQ Sim.</li>
+<li>Follow the instructions included with the VM guide to generate PQ events on the simulator.</li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="plugin-development"></a><a href="#plugin-development" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Plugin Development</h3>
+<p>The following steps are required to create a new OPQMauka plugin:</p>
+<ol>
+<li><p>Create a new Python module for the plugin in the plugins package (i.e. my_fancy_plugin.py). Ensure that the plugin module name follows PEP 8 conventions.</p></li>
+<li><p>import the plugin base modules</p></li>
+</ol>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">import</span> plugins.base_plugin
+<span class="hljs-keyword">import</span> protobuf.mauka_pb2
+<span class="hljs-keyword">import</span> protobuf.util
+</code></pre>
+<ol start="3">
+<li>Create a class that extends the base plugin.</li>
+</ol>
+<pre><code class="hljs css language-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyFancyPlugin</span><span class="hljs-params">(plugins.base_plugin.MaukaPlugin)</span>:</span>
+      ...
+</code></pre>
+<ol start="5">
+<li>Provide the following constructor for your class. Ensure the a call to super provides the configuration, list of topics to subscribe to, and the name of the plugin. Finally, a multiprocess exit event object is passed to the base class with allows the plugin manager to safely terminate plugins.</li>
+</ol>
+<pre><code class="hljs css language-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, config, exit_event)</span>:</span>
+      NAME = <span class="hljs-string">"MyFancyPlugin"</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, config: typing.Dict, exit_event: multiprocessing.Event)</span>:</span>
+              <span class="hljs-string">"""
+              Initializes this plugin
+              :param config: Mauka configuration
+              :param exit_event: Exit event that can disable this plugin from parent process
+              """</span>
+              super().__init__(config, [<span class="hljs-string">"SubscribeTopicA"</span>, <span class="hljs-string">"SubscribeTopicB"</span>], MyFancyPlugin.NAME, exit_event)
+</code></pre>
+<ol start="6">
+<li>Overload the <code>on_message</code> from the base class and use the protobuf utils to check to ensure your receiving a message of a type that the plugin expects.</li>
+</ol>
+<pre><code class="hljs css language-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_message</span><span class="hljs-params">(self, topic, mauka_message)</span>:</span>
+    <span class="hljs-string">"""
+    Fired when this plugin receives a message. 
+    :param topic: Topic of the message.
+    :param mauka_message: Contents of the message.
+    """</span>
+    <span class="hljs-keyword">if</span> protobuf.util.is_payload(mauka_message, protobuf.mauka_pb2.MESSAGE_TYPE): <span class="hljs-comment"># Replace MESSAGE_TYPE with proper type</span>
+        self.debug(<span class="hljs-string">"on_message {}:{} len:{}"</span>.format(mauka_message.payload.event_id,
+                                                    mauka_message.payload.box_id,
+                                                    len(mauka_message.payload.data)))
+        <span class="hljs-comment"># Call the function that handles the recvieved message. Something like below...</span>
+        handle_message(arg0, arg1, ..., argN)
+    <span class="hljs-keyword">else</span>:
+        self.logger.error(<span class="hljs-string">"Received incorrect mauka message [%s] at ThdPlugin"</span>,
+                          protobuf.util.which_message_oneof(mauka_message))
+</code></pre>
+<ol start="7">
+<li>Produce messages by invoking the superclasses produce method where message is an instance of a mauka protobuf message.</li>
+</ol>
+<pre><code class="hljs css language-python">self.produce(topic: str, message)
+</code></pre>
+<ol start="8">
+<li>Import  your plugin in <code>mauka/opq_mauka.py</code>.</li>
+</ol>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">import</span> plugins.my_fancy_plugin
+</code></pre>
+<ol start="9">
+<li>Register your plugin in <code>mauka/opq_mauka.py</code>.</li>
+</ol>
+<pre><code class="hljs css language-python">plugin_manager.register_plugin(plugins.my_fancy_plugin.MyFancyPlugin)
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="suggested-subscriptions"></a><a href="#suggested-subscriptions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Suggested Subscriptions</h3>
+<p>When developing a new Mauka plugin, it's likely there there is already a data source that you can subscribe to. The MakaiEventPlugin publishes both high and low fidelity data streams when events are triggered by OPQMakai. These data streams can be subscribed to by other Mauka plugins. These message types include:</p>
+<p><code>AdcSamples</code> which provide raw ADC samples sampled by the OPQBox.</p>
+<p><code>RawVoltage</code> which converts the ADC samples in raw voltage samples.</p>
+<p><code>RmsWindowedVoltage</code> provides Vrms features from a voltage waveform where Vrms is calculated by cycle.</p>
+<p><code>WindowedFrequency</code> provides frequency features calculated at the cycle level from the original power waveform.</p>
+<h3><a class="anchor" aria-hidden="true" id="message-injection"></a><a href="#message-injection" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Message Injection</h3>
+<p>It's nice to think of Mauka as a perfect DAG of plugins, but sometimes its convenient to dynamically publish (topic, message) pairs directly into the Mauka system.</p>
+<p>This is useful for testing, but also useful for times when we want to run a plugin of historical data. For instance, let's say a new plugin Foo is developed. In order to apply Foo's metric to data that has already been analyzed, we can inject messages into the system targetting the Foo plugin and triggering it to run over the old data.</p>
+<p>This functionality is currently contained in <a href="https://github.com/openpowerquality/opq/blob/master/mauka/plugins/mock.py">plugins/mock.py</a>.</p>
+<p>The script can either be used as part of an API or as a standalone script. As long as the URL of Mauka's broker is known, we can use this inject messages into the system. This provides control over the topic, message contents, and the type of the contents (string or bytes).</p>
+<h3><a class="anchor" aria-hidden="true" id="testing"></a><a href="#testing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Testing</h3>
+<p>Mauka utilizes Python's built-in support for <a href="https://docs.python.org/3/library/unittest.html">unit testing</a>.</p>
+<p>Unit tests should be used to test the analysis functionality of every Mauka plugin. Tests are currently laid out in the following manner.</p>
+<pre><code class="hljs">opq/mauka/tests
+<span class="hljs-bullet">  + </span>/services
+<span class="hljs-bullet">  + </span>/plugins 
+</code></pre>
+<p>Unit tests that tests Mauka services (such as the brokers or plugin manager) should reside in <code>tests/services</code>. Unit tests for plugins should reside in <code>tests/plugins</code>. Every testing sub-directory must include a <code>__init__.py</code> file.</p>
+<p>Every plugin should have a module in the <code>tests/plugins</code> directory that directly tests a Mauka plugin. Every plugin module should be named test_<i>PluginName</i>.py</p>
+<p>Each test plugin module must contain a class (which is the same name as the module) that then extends <code>unittest.TestCase</code>.</p>
+<p>An example of this layout can be seen at <code>mauka/tests/plugins/test_itic_plugin.py</code>.</p>
+<p>To run all unit tests, run <code>python -m unittest discover</code> from the <code>opq/mauka</code> directory. This command will recursively discover all unittests in the tests directory and run them.</p>
+<pre><code class="hljs">(venv-opq) [anthony@localhost mauka]$ python3 -m unittest discover
+<span class="hljs-section">......
+----------------------------------------------------------------------</span>
+Ran 6 tests in 0.003s
+
+OK
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="development-guidelines"></a><a href="#development-guidelines" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Development Guidelines</h3>
+<ol>
+<li>Follow the <a href="https://www.python.org/dev/peps/pep-0008/">pep 8</a> Python coding convention (see also <a href="http://pep8.org/#introduction">http://pep8.org/#introduction</a>). If any of the other following guidelines contradict the pep 8 standard, use the following instead of the standard.</li>
+<li>Lines must be &lt; 120 characters</li>
+<li>Variables, functions, methods, and modules should be <a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a></li>
+<li>Classes should use <a href="https://en.wikipedia.org/wiki/Camel_case">CapitalCamelCase</a></li>
+<li>Constants and enumeration values should be SNAKE_CASE_ALL_CAPS</li>
+<li>Modules should provide module level documentation at the top of every .py file that briefly describes the purpose and contents of the module</li>
+<li>Functions and methods should document their purpose, input, and output as Python <a href="http://docs.python-guide.org/en/latest/writing/documentation/">docstrings</a>.</li>
+<li>Do not add type information to documentation, instead provide type information using Python's built-in <a href="https://docs.python.org/3/library/typing.html">type hints</a> (see also <a href="https://www.python.org/dev/peps/pep-0484/">https://www.python.org/dev/peps/pep-0484/</a>)</li>
+<li>Whenever practical and when types are known, provide type hints for class variables, instance variables, and function/method inputs and return types. The type hints are not enforced at runtime, but merely provide compile time hints. These are most useful in conjunction with an IDE so that your editor can highlight when input or return types do not match what is expected.</li>
+<li>Whenever a new plugin is developed, update OPQ's <a href="https://github.com/openpowerquality/docusaurus">docusaurus</a> to provide a high-level and technical documentation on the plugin. Mauka Diagrams may also need to be updated.</li>
+<li>Whenever you commit or merge to master, ensure the Mauka code base passes all static analysis checks and all unit tests pass.</li>
+</ol>
+<p><a href="https://www.python.org/dev/peps/pep-0020/">The Zen of Python (pep 20)</a></p>
+<pre><code class="hljs">Beautiful <span class="hljs-keyword">is</span> better than ugly.
+<span class="hljs-keyword">Explicit</span> <span class="hljs-keyword">is</span> better than implicit.
+Simple <span class="hljs-keyword">is</span> better than complex.
+Complex <span class="hljs-keyword">is</span> better than complicated.
+Flat <span class="hljs-keyword">is</span> better than nested.
+Sparse <span class="hljs-keyword">is</span> better than dense.
+Readability counts.
+Special cases aren<span class="hljs-comment">'t special enough to break the rules.</span>
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+<span class="hljs-keyword">In</span> the face <span class="hljs-keyword">of</span> ambiguity, refuse the temptation <span class="hljs-keyword">to</span> guess.
+There should be one-- <span class="hljs-keyword">and</span> preferably only one --obvious way <span class="hljs-keyword">to</span> <span class="hljs-keyword">do</span> it.
+Although that way may <span class="hljs-keyword">not</span> be obvious at first unless you<span class="hljs-comment">'re Dutch.</span>
+Now <span class="hljs-keyword">is</span> better than never.
+Although never <span class="hljs-keyword">is</span> often better than *right* now.
+<span class="hljs-keyword">If</span> the implementation <span class="hljs-keyword">is</span> hard <span class="hljs-keyword">to</span> explain, it<span class="hljs-comment">'s a bad idea.</span>
+<span class="hljs-keyword">If</span> the implementation <span class="hljs-keyword">is</span> easy <span class="hljs-keyword">to</span> explain, it may be a good idea.
+Namespaces are one honking great idea -- <span class="hljs-keyword">let</span><span class="hljs-comment">'s do more of those!</span>
+</code></pre>
+<p>When in doubt, ask.</p>
+<h3><a class="anchor" aria-hidden="true" id="static-analysis"></a><a href="#static-analysis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Static Analysis</h3>
+<p><a href="https://coala.io/#/home">Coala</a> is used to perform static analysis of the Mauka code base. Coala utilizes a plugin architecture to wrap several linters for Python (and other) code bases.</p>
+<p>See <a href="https://github.com/coala/bear-docs/blob/master/README.rst#python">https://github.com/coala/bear-docs/blob/master/README.rst#python</a> to find information about linters that are supported for Python.</p>
+<p>Static code analysis in Mauka is controlled by the .coafile at <a href="https://github.com/openpowerquality/opq/blob/master/mauka/.coafile">opq/mauka/.coafile</a></p>
+<p>To perform static code analysis ensure that coala is installed. Change to the <code>mauka</code> directory and invoke <code>coala --ci</code>. This will load the .coafile settings, run the linters, and display any errors tha the linters find. The following is an example of such a run.</p>
+<pre><code class="hljs">anthony:~/Development/opq/mauka [<span class="hljs-number">12</span>:<span class="hljs-number">28</span>:<span class="hljs-number">11</span> Tue Jul <span class="hljs-number">03</span>]
+&gt; coala --ci
+Executing <span class="hljs-selector-tag">section</span> mauka...
+Executing <span class="hljs-selector-tag">section</span> mauka<span class="hljs-selector-class">.spacing</span>...
+Executing <span class="hljs-selector-tag">section</span> mauka<span class="hljs-selector-class">.pep8</span>...
+Executing <span class="hljs-selector-tag">section</span> mauka<span class="hljs-selector-class">.pylint</span>...
+Executing <span class="hljs-selector-tag">section</span> mauka<span class="hljs-selector-class">.pyflakes</span>...
+Executing <span class="hljs-selector-tag">section</span> mauka<span class="hljs-selector-class">.bandit</span>...
+Executing <span class="hljs-selector-tag">section</span> cli...
+</code></pre>
+<p>Here, we can see the different sections and linters running over the Mauka code base. Let's discuss each of the sections in detail.</p>
+<h4><a class="anchor" aria-hidden="true" id="static-analysis-configuration"></a><a href="#static-analysis-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Static Analysis Configuration</h4>
+<p>Configuration for Mauka's static analysis is performed in the <a href="https://github.com/openpowerquality/opq/blob/master/mauka/.coafile">opq/mauka/.coafile</a> file.</p>
+<p>The <code>mauka</code> section sets up ignored files and files that need to be linted. In our case, we want to ignore the auto-generated protobuf files and the tests directory. We want to lint all other files under mauka/ that end with the <code>.py</code> extension.</p>
+<p><code>mauka.spacing</code> ensures that all whitespace consists of space characters and not tabs.</p>
+<p><code>mauka.pep8</code> ensures that the code base conforms to Python pep8 standard. We make one change which is to set max line length to 120 characters.</p>
+<p><code>mauka.pylint</code> runs <a href="https://www.pylint.org/">pylint</a> over the Mauka code base which catches a wide range common style and bug prone code. We disable <a href="http://pylint-messages.wikidot.com/messages:c0301">C0301</a> since this already checked and configured in the mauka.pep8 linter. We also disable C1801 which disallows the following:</p>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">if</span> len(some_collection) == <span class="hljs-number">0</span>:
+    <span class="hljs-comment"># do something</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-comment"># do something else    </span>
+</code></pre>
+<p>in favor of the more Pythonic</p>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">if</span> some_collection:
+    <span class="hljs-comment"># do something</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-comment"># do something else</span>
+</code></pre>
+<p>which tests if the collection is empty directly using the if statement. This issue with this approach is that this idiom does not work for numpy arrays. These are so prevalent in our code that we decided to use the len(collection) idiom to test for all empty collections since this approach does work with numpy.</p>
+<p><code>mauka.pyflakes</code> (<a href="https://github.com/PyCQA/pyflakes">https://github.com/PyCQA/pyflakes</a>) performs similar linting to pylint.</p>
+<p><code>mauka.bandit</code> performs security checks over the code base. B322 is disabled since it only applies to Python 2 code bases.</p>
+<h2><a class="anchor" aria-hidden="true" id="api-documentation"></a><a href="#api-documentation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>API Documentation</h2>
+<p><a href="/mauka/api_docs/opq_mauka.html">Mauka API Documentation</a></p>
+<h2><a class="anchor" aria-hidden="true" id="docker"></a><a href="#docker" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker</h2>
+<p>Please see <a href="cloud-docker.html">Building, Publishing, and Deploying OPQ Cloud Services with Docker</a> for information on packaging up this service using Docker.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/cloud-view.html"><span class="arrow-prev">← </span><span>View</span></a><a class="docs-next button" href="/docs/cloud-makai.html"><span>Makai</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#design">Design</a><ul class="toc-headings"><li><a href="#overview">Overview</a></li><li><a href="#mauka-services">Mauka Services</a></li><li><a href="#mauka-plugins">Mauka Plugins</a></li><li><a href="#base-plugin-maukaplugin">Base Plugin (MaukaPlugin)</a></li><li><a href="#acquisition-trigger-plugin">Acquisition Trigger Plugin</a></li><li><a href="#frequency-variation-plugin">Frequency Variation Plugin</a></li><li><a href="#ieee-1159-voltage-plugin">IEEE 1159 Voltage Plugin</a></li><li><a href="#itic-plugin">ITIC Plugin</a></li><li><a href="#makai-event-plugin">Makai Event Plugin</a></li><li><a href="#outage-plugin">Outage Plugin</a></li><li><a href="#print-plugin">Print Plugin</a></li><li><a href="#semi-f47-plugin">Semi F47 Plugin</a></li><li><a href="#status-plugin">Status Plugin</a></li><li><a href="#total-harmonic-distortion-plugin">Total Harmonic Distortion Plugin</a></li><li><a href="#transient-plugin">Transient Plugin</a></li></ul></li><li><a href="#development">Development</a><ul class="toc-headings"><li><a href="#obtaining-the-sources">Obtaining the sources</a></li><li><a href="#directory-structure-and-layout">Directory structure and layout</a></li><li><a href="#running-in-development">Running in development</a></li><li><a href="#plugin-development">Plugin Development</a></li><li><a href="#suggested-subscriptions">Suggested Subscriptions</a></li><li><a href="#message-injection">Message Injection</a></li><li><a href="#testing">Testing</a></li><li><a href="#development-guidelines">Development Guidelines</a></li><li><a href="#static-analysis">Static Analysis</a></li></ul></li><li><a href="#api-documentation">API Documentation</a></li><li><a href="#docker">Docker</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/opqlogo_white.png" alt="Open Power Quality" width="66" height="58"/></a><div><h5>Documentation Quick Links</h5><a href="/docs/intro-opq.html">Overview</a><a href="/docs/userguide-hardware.html">OPQ Box User Guide</a><a href="/docs/userguide-software.html">OPQ View User Guide</a><a href="/docs/other-agile-power-monitoring.html">Agile Power Monitoring for UH</a><a href="/docs/other-roadmap.html">Roadmap</a></div><div><h5>Community</h5><a href="https://openpowerquality.slack.com/" target="_blank" rel="noreferrer noopener">Slack</a><a href="https://twitter.com/opquality" target="_blank" rel="noreferrer noopener">Twitter</a><a href="/blog">News</a><a href="https://ics02.colo.hawaii.edu/">Public OPQ Cloud</a><a href="/contact-us.html">Contact Us</a></div><div><h5>Development</h5><a href="https://github.com/openpowerquality">GitHub</a><a href="https://github.com/openpowerquality/opq/projects">Project Boards</a><a href="/team.html">Developer Team</a><a href="/docs/opportunities.html">Opportunities</a></div></section><p style="text-align:center;color:#e9faff">Open Power Quality is sponsored by:<br/><a style="text-align:center;color:#e9faff" href="http://csdl.ics.hawaii.edu">Collaborative Software Development Laboratory, University of Hawaii</a><br/><a style="text-align:center;color:#e9faff" href="http://www.ics.hawaii.edu">Department of Information and Computer Sciences, University of Hawaii</a><br/><a style="text-align:center;color:#e9faff" href="http://ee.hawaii.edu">Department of Electrical Engineering, University of Hawaii</a><br/></p></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '9bf16cc78135dbeeb3826894ebbbb2ee',
+                indexName: 'openpowerquality',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
